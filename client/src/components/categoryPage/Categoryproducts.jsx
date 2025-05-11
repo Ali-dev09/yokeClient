@@ -7,7 +7,7 @@ import '../../styles/categoryPage.css';
 import WhatsApp from '../WhatsApp.jsx';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import {Helmet} from 'react-helmet-async'
+
 
 export default function CategoryProducts() {
   const navigate = useNavigate();  // Define navigate for use in the button click
@@ -75,11 +75,7 @@ export default function CategoryProducts() {
   return (
     
     <div>
-      <Helmet>
-        <title>{categoryName}</title>
-        <meta name="description" content={`استكشف منتجاتنا من  ${categoryName}`} />
-        <meta name="keywords" content={`${categoryName}`}/>
-      </Helmet>
+     
       <h2 className='category-title'>فئة: {categoryName}</h2>
 
       {/* Show message if no products were found */}

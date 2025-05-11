@@ -1,6 +1,6 @@
 import cart from './scripts/cart.js'
 
-export const backendUrl = 'https://yoke-server-production.up.railway.app'
+export const backendUrl = 'https://yoke-server-production-5692.up.railway.app'
 
 
 export function updateCart() {

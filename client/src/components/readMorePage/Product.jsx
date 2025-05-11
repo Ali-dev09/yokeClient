@@ -5,7 +5,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import '../../styles/productDetails.css';
 import Dialog from '../Dialog';
 import cart from '../../scripts/cart.js';
-import {Helmet} from 'react-helmet-async'
+
 export default function Product() {
   const navigate = useNavigate()
   const { productId } = useParams();
@@ -52,17 +52,7 @@ export default function Product() {
 
   return (
     <div className="details-product">
-      <Helmet>
-        <title>{name}</title>
-        <meta name="description" content={description} />
-        <meta property="og:title" content={name} />
-        <meta property="og:description" content={description} />
-        <meta property="og:image" content={image} />
-        <meta property="og:url" content={window.location.href} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={name} />
-        <meta name="twitter:description" content={description} />
-      </Helmet>
+     
       {/* Image */}
       <div className="details-image">
         <img src={image || '/path/to/fallback-image.jpg'} alt="Product" />
